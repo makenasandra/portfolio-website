@@ -4,6 +4,9 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { HashLink } from 'react-router-hash-link';
+import { Link } from "react-router-dom";
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -61,7 +64,9 @@ export const Banner = () => {
                   <p>
                     Meticulous Engineer who is passionate about solving problems using technology
                   </p>
+                 
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                 {/* <HashLink></HashLink> */}
               </div>}
             </TrackVisibility>
           </Col>
