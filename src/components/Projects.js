@@ -11,8 +11,9 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Met",
-      description: "Design & Development",
+      title: "Met Virtual Gallery",
+      description: "This is a full stack Next.js project that makes use to the Met gallery API to display featured and user-searched art pieces",
+      techStack: "Next.js",
       imgUrl: projImg1,
     },
     {
