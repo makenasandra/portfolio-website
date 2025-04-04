@@ -155,7 +155,7 @@ nav.navbar {
     border-radius: 5%;
   }
 
-@media only screen and (max-width:1000px) and (min-width:692px){
+@media only screen and (max-width:1000px) and (min-width:768px){
     .navbar-container{
         margin: 0 clamp(2rem, 8vw, 5rem);
     }
