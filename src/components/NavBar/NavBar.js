@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
+import './NavBar.css';
 import { Navbar, Nav, Container } from "react-bootstrap";
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/github-logowhite.svg';
+import navIcon1 from '../../assets/img/nav-icon1.svg';
+import navIcon2 from '../../assets/img/github-logowhite.svg';
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -33,7 +34,7 @@ export const NavBar = () => {
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-        <Container>
+        <Container className="navbar-container">
           <Navbar.Brand href="/">
           Makena
             {/* <img src={logo} alt="Logo" /> */}
