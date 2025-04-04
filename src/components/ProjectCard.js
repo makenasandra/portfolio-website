@@ -1,7 +1,7 @@
 import { Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export const ProjectCard = ({ title, description, techStack, imgUrl }) => {
+export const ProjectCard = ({ title, description, techStack, imgUrl, codeUrl, projectUrl }) => {
   return (
     <Col size={12} sm={6} md={4}>
       <div className="proj-imgbx">
@@ -14,11 +14,12 @@ export const ProjectCard = ({ title, description, techStack, imgUrl }) => {
         </div>
       </div>
       <div className="project-buttons">
-        <a href="https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules">
+        <a href={codeUrl} target="_blank" rel="noreferrer">
         <button className="view-project"><span>View Project</span></button>
         </a>
-        
+        <a href={projectUrl} target="_blank" rel="noreferrer">
         <button className="view-project"><span>View Code</span></button>
+        </a>
        
       </div>
      
