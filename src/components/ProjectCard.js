@@ -14,7 +14,7 @@ export const ProjectCard = ({ title, description, techStack, imgUrl, codeUrl, pr
         </div>
       </div>
       <div className="project-buttons">
-        <a href={projectUrl} target="_blank" rel="noreferrer">
+        <a href={projectUrl??"#"} target="_blank" rel="noreferrer">
         <button className="view-project"><span>View Project</span></button>
         </a>
         <a href={codeUrl} target="_blank" rel="noreferrer">
